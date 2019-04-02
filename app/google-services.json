@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "384781158659",
+    "firebase_url": "https://symbioticon-efirst.firebaseio.com",
+    "project_id": "symbioticon-efirst",
+    "storage_bucket": "symbioticon-efirst.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384781158659:android:d81764f7a5a0454b",
+        "android_client_info": {
+          "package_name": "com.example.tianmi.phpsql"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF3hWtOi5aA5xyo-zCDD7Em_kab4-blEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384781158659-mhob7qkp1j78kinc9pvfdrb48o3luuf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384781158659:android:bd194eb1dee84749",
+        "android_client_info": {
+          "package_name": "ru.getnow.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF3hWtOi5aA5xyo-zCDD7Em_kab4-blEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384781158659-mhob7qkp1j78kinc9pvfdrb48o3luuf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
