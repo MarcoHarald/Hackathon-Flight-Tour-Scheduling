@@ -1,9 +1,16 @@
 package ru.getnow.app;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.PointF;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.jiahuan.svgmapview.SVGMapView;
+import com.jiahuan.svgmapview.SVGMapViewListener;
+import com.jiahuan.svgmapview.overlay.SVGMapLocationOverlay;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -23,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show());
+        fab.setOnClickListener(view -> startActivity(new Intent(getBaseContext(), MapActivity.class)));
 
         setupViewModel();
     }
