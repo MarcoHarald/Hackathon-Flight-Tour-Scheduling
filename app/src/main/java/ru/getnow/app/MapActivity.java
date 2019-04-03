@@ -13,10 +13,12 @@ import com.jiahuan.svgmapview.overlay.SVGMapLocationOverlay;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.lifecycle.ViewModelProviders;
 
 import android.view.View;
 
 public class MapActivity extends AppCompatActivity {
+    SVGMapView mapView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +27,7 @@ public class MapActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final SVGMapView mapView = findViewById(R.id.location_mapview);
+        mapView = findViewById(R.id.location_mapview);
 
         mapView.registerMapViewListener(new SVGMapViewListener()
         {
@@ -58,6 +60,33 @@ public class MapActivity extends AppCompatActivity {
         fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        setupViewModel();
     }
 
+
+    private void setupViewModel() {
+        MapViewModel viewModel = ViewModelProviders.of(this).get(MapViewModel.class);
+    }
+
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+        mapView.onPause();
+    }
+
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
+        mapView.onResume();
+    }
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
 }
