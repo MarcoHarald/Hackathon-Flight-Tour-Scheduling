@@ -1,0 +1,9 @@
+apply plugin: 'com.android.library'
+
+android {
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+    }
+    compileSdkVersion 28
+}

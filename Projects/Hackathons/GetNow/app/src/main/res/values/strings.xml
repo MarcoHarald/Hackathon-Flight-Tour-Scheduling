@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Airline ABC. Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="money_to_spend">Money to spend (€)</string>
+    <string name="preferencies">Preferencies</string>
+</resources>
